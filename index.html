@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <div class="nav-container">
+          <div class="logo"> 
+            Diksha Singh <span>Chouhan</span>
+          </div>
+        <div class="links">
+          <div class="link"><a href="#header">Home</a></div>
+          <div class="link"><a href="#about">About</a></div>
+          <div class="link"><a href="#services">Services</a></div>
+          <div class="link"><a href="#my-work">Projects</a></div>
+          <div class="link"><a href="#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+          <div class="dropdown">
+            <div class="links">
+              <a href="#header">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#my-work">Projects</a>
+              <a href="#contact">Contact</a>
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+            </div>
+        </nav>
+      <div class="main-container">
+        <div class="image">
+          <img src="images/image1.jpeg" alt="">
+        </div>
+          <div class="content">
+               <h1>Hi There,<br> I'm <span>Diksha Singh</span></h1>
+               <div class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label>
+                </div>
+         </div>
+      </div>
+    </div>
+     
+        <!------------about section---------------->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="images/image2.jpeg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a passionate web developer, I specialize in creating dynamic and user-friendly websites that enhance online 
+                  experiences. With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning complex ideas into intuitive designs.
+                   I’m dedicated to staying up-to-date with the latest industry trends and
+                   technologies, always striving to improve my skills and deliver high-quality solutions for clients.</p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>Web Development</span><br>Designing Websites</li>
+                    <li><span>After Effects</span><br>Creating logo </li>
+                    <li><span>Desktop Publishing</span><br>Generating page layouts </li>    
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span>2024 - Current</span><br>Master Of Computer Applications at JEC Jabalpur</li>
+                    <li><span>2023</span><br>Resposive Web Design Training at Freecode Camp </li> 
+                    <li><span>2022</span><br>Internship on Adobe After Effect from Easy Shiksha </li>    
+                    <li><span>2021-2024</span><br>Bachelor Of Computer Applications at St.Aloysius College Jabalpur </li>      
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span>2023</span><br>Resposive Web Design Training at Freecode Camp</li>
+                    <li><span>2022</span><br>Internship on Adobe After Effect from Easy Shiksha </li>    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---services-->
+        <div id="services">
+          <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div>
+                <h2>Web Design</h2>
+                <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
+                
+              </div>
+              <div>
+                <h2>After Effects</h2>
+                <p>Expertise in animation and motion graphics to enhance your video projects.</p>
+  
+              </div>
+              <div>
+                <h2>Desktop Publishing</h2>
+                <p>Designing print-ready materials, including brochures, flyers, and magazines.</p>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---projects-->
+        <div id= "my-work">
+          <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="images/img1.jpeg">
+                <div class="layer">
+                  <h3>Logo</h3>
+                  <p>A logo made with adobe After Effect to enhance video projects.</p>
+                </div>
+                </div>
+              <div class="work">
+                <img src="images/img2.jpeg">
+                <div class="layer">
+                  <h3>Image Slider</h3>
+                <p>An image slider using HTML CSS JS for home page.</p>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/img3.jpeg">
+                <div class="layer">
+                  <h3>To Do List App</h3>
+                  <p>A to-do-list application using HTML CSS JS for daily use.</p>
+                    </div>
+              </div>
+              </div>
+              <a href="mywork.html" class="btn-1">See More</a>
+          </div>
+        </div>
+        <!--contact-->
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>dikshasinghchouhan10@gmail.com</p>
+                <p><i class="fas fa-phone"></i>9406542657</p>
+                <div class="social-links">
+                  <a href="https://www.instagram.com/dikshaaa.10"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://github.com/Dikshasingh124"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/Diksha Singh Chouhan"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="CV.pdf" download class="btn-1 btn2">Download Cv</a>
+                
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="5" placeholder="Message"></textarea>
+                  <button type="submit" class="btn-1 btn2">Submit</button>
+                </form>
+                <span id="message"></span>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright <i class="fas fa-copyright"></i> Diksha Singh Chouhan. All rights reserved.</p>
+          </div>
+        </div>
+      
+    
+    
+    <script src="portfolio.js"></script>
+    
+   
+
+  </body>
+  </html>
