@@ -28,3 +28,7 @@ insights into my professional journey.
 # Contact
 Feel free to reach out if you have any questions:
 Email: dikshasinghchouhan10@gmail.com
+# installation
+git clone https://github.com/Dikshasingh124/portfolio.git
+cd portfolio
+
