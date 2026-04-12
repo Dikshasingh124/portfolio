@@ -10,8 +10,9 @@ function cancel() {
 
 // Typewriter effect
 const texts = [
-    "Developer",
-    "Designer"
+   "MCA Student",
+"IT Professional",
+"Fresher"
 ];
 let speed = 100;
 const textElements = document.querySelector('.typewriter-text');
@@ -60,18 +61,17 @@ function opentab(tabname){
 
 
 //----google sheet code--
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLPZepv1BWWn5q16zEStYClgMeOYvRRzBN-zn0DbYtDqpHJ7WBZiLnMuMgk61aSjF1bw/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzio8htAaDE_Unfkwa7wb6TOi8ryfVQQlFkpV4BWeeZtHXa96HrFSABpNuPxikZE4h-Sw/exec';
   const form = document.forms['submit-to-google-sheet']
-const message = document.getElementById("message")
+const message = document.getElementById("msg")
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-            message.innerHTML = "Message Sent"
-            setTimeout(function(){
-                message.innerHTML = ""
-            },5000)
-            form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    fetch(scriptURL, { method: 'POST',  body: new FormData(form)});
+      
+           setTimeout(() => {
+    message.innerHTML = "Message Sent";
+    form.reset();
+  }, 1000);
+});
+     
+  
